@@ -19,9 +19,9 @@ This guide will help you setup Runnable templates for a simple Node.js web appli
 ![node1](/images/node1.png)  
 3. Find the repository you would like to configure the template for. In this case, we are starting with the `node-web` repository.  
 ![node2](/images/node2.png)  
-4. Choose the first option to use our simple setup guide.
+4. Choose the first option to use our simple setup guide.  
 ![node2](/images/node2a.png)  
-5. Give your template a name. This name will be used to generate the template URLs of all the containers that will launch from this template. Check out [this](http://https://runnable.zendesk.com/hc/en-us/articles/212802006) article for more details on URLs in Runnable.
+5. Give your template a name. This name will be used to generate the template URLs of all the containers that will launch from this template.  
 ![node2](/images/node2b.png)  
 6. Next, you’ll be able to select your app’s Stack Type, Version and Branch for your template. Go ahead and choose Node.js for your stack type, and select the version you want to use. Make sure you choose the branch that corresponds to your team’s main integration branch (‘master’  or ‘develop’ for example).  
 ![node3](/images/node3.png)  
@@ -96,10 +96,8 @@ This is a terminal session into a container launched from your template. This is
 
 #### URL
 
-This is the Environment URL corresponding to the container launched from the default branch. Check [this](https://support.runnable.com/hc/en-us/articles/212802006-Runnable-URLs) article out for more about Runnable URLs.
+This is the Environment URL corresponding to the container launched from the default branch. Check [this](https://runnable.com/docs/networking/runnable-urls-explained) article out for more about Runnable URLs.
 
 ![node12](/images/node12.png)  
 
 * If everything went well, your build will complete successfully. Anytime you run across an error that you need help with, we have developers ready to help in real-time. Click on the chat bubble on the bottom left!  
-
-Head on over to our [Branches](https://support.runnable.com/hc/en-us/sections/202755686-Branches) section to see how you can add your branches and start auto-isolation.
