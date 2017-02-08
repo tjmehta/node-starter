@@ -20,7 +20,7 @@
     "prestart": "npm run migrate",
     "start": "node index.js",
     "migrate": "echo 'No migrations to run.'",
-    "test": "mocha test"
+    "test": "node_modules/.bin/mocha test"
   },
   "author": "Runnable, Inc.",
   "license": "MIT",
