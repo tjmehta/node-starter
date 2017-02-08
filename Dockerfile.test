@@ -1,0 +1,8 @@
+FROM runnable/node-starter:test
+MAINTAINER Runnable, Inc.
+
+# Add Application Files
+COPY . /app/
+
+# Run Tests
+CMD npm test
