@@ -8,16 +8,19 @@ describe('todos', function () {
 
   beforeEach(() => {
     Todo = mongoose.model('Todo');
-    sinon.stub(Todo, "find").yields(null, []);
+    sinon.stub(Todo, 'find').yields(null, []);
   });
 
-  it('all should return all', function() {
-    let response = {send : () => {}};
+  describe('all should return all todos', function() {
+    it('all with no results should return an empty array', () => {
+      let response = {
+        send: sinon.stub()
+      };
 
-    sinon.stub(response, "send");
+      todos.all({}, response);
 
-    todos.all({}, response);
-
-    sinon.assert.calledOnce(response.send);
+      sinon.assert.calledOnce(response.send);
+      sinon.assert.calledWith(response.send, []);
+    })
   });
 });
