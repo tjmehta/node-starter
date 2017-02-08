@@ -1,15 +1,8 @@
-# For creating a docker file by hand in runnable, it translates to the special syntax
-FROM node:argon
+FROM runnable/node-starter:test
 MAINTAINER Runnable, Inc.
 
-# Cache NPM Install
-COPY /node-starter/package.json /app/
-WORKDIR /app/
-RUN npm install
-
 # Add Application Files
-COPY /node-starter/ /app/
-EXPOSE 3000
+COPY . /app/
 
-# Run Application
+# Run Tests
 CMD npm test
